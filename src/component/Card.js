@@ -33,7 +33,6 @@ export function Card({className, arrayData, numberCards}) {
     else return
   }
 
-
   return (<>
     <ul className={className? className + ' card-list': 'card-list'}>{ cardsOnList.map((item, id) => {
       return <ItemCard key={id} item={item} />

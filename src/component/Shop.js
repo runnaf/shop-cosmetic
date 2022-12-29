@@ -10,7 +10,7 @@ const options = [
   { value: 'price-desc', label: 'По убыванию цены' },
 ];
 
-export function Shop() {
+export function Shop({functionRanger}) {
   const [dataArray, setDataArray] = useState(data);
   const [selectedOption, setSelectedOption] = useState('popular');
   const [value, setValue] = useState("all");
@@ -63,7 +63,7 @@ export function Shop() {
       <TitleMain text="Каталог" />
       <form className="catalog__filter">
         <fieldset>
-          <input className="visually-hidden" onChange={onChangeValueRadio} type="radio" name="radio" id="all" value="all" checked={value === "all" ? true : false}/>
+          <input className="visually-hidden" onChange={()=> {onChangeValueRadio()}} type="radio" name="radio" id="all" value="all" checked={value === "all" ? true : false}/>
           <label htmlFor="all">Все товары</label>
           <input className="visually-hidden"  onChange={onChangeValueRadio} type="radio" name="radio" id="soup" value="soap" checked={value === "soap" ? true : false}/>
           <label htmlFor="soup">Мыло</label>
