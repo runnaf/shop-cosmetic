@@ -122,6 +122,18 @@ img {
   padding-top: 134px;
 }
 
+.preview a {
+  text-decoration: none;
+  padding: 20px 30px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 0%, 1);
+  color: hsla(0, 0%, 0%, 1);
+  width: fit-content;
+}
+
 .preview__title {
   position: relative;
   font-family: 'Cormorant Garamond';
@@ -584,4 +596,20 @@ li .current-page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+fieldset {
+  border: none;
+  outline: none;
+}
+
+input:checked + label {
+  font-size: 18px;
+  color: aqua;
+}
+
+label {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
 }

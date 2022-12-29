@@ -5,11 +5,10 @@ import { ArrowButton } from "./svg/ArrowButton";
 
 
 export function Card({className, arrayData, numberCards}) {
-  const [card] = useState(arrayData);
   const [cardPage,setCardPage] = useState(1);
   const lastIndexCard = cardPage*numberCards;
   const firstIndexCard = lastIndexCard - numberCards;
-  const cardsOnList = card.slice(firstIndexCard, lastIndexCard);
+  const cardsOnList = arrayData.slice(firstIndexCard, lastIndexCard);
   const lists = [];
   
   for (let i = 1; i<= Math.ceil(arrayData.length/numberCards); i++) {

@@ -13,7 +13,7 @@ export const data = [
     price: 400,
     image: './img/catalog/bomb/0.png',
     popular: true,
-    type: 'soap',
+    type: 'bath-bomb',
   },
   {
     id:3,
@@ -21,7 +21,7 @@ export const data = [
     price: 150,
     image: './img/catalog/bomb/1.png',
     popular: true,
-    type: 'soap',
+    type: 'bath-bomb',
   },
   {
     id:4,
@@ -29,7 +29,7 @@ export const data = [
     price: 400,
     image: './img/catalog/scrub/0.png',
     popular: true,
-    type: 'soap',
+    type: 'scrub',
   },
   {
     id: 5,
@@ -220,7 +220,7 @@ export const data = [
     image: './img/catalog/bomb/2.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -228,7 +228,7 @@ export const data = [
     image: './img/catalog/bomb/3.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -236,7 +236,7 @@ export const data = [
     image: './img/catalog/bomb/4.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: true,
   },
   {
@@ -244,7 +244,7 @@ export const data = [
     image: './img/catalog/bomb/5.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -252,7 +252,7 @@ export const data = [
     image: './img/catalog/bomb/6.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: true,
   },
   {
@@ -260,7 +260,7 @@ export const data = [
     image: './img/catalog/bomb/7.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -268,7 +268,7 @@ export const data = [
     image: './img/catalog/bomb/8.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -276,7 +276,7 @@ export const data = [
     image: './img/catalog/bomb/9.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -284,7 +284,7 @@ export const data = [
     image: './img/catalog/bomb/10.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -292,7 +292,7 @@ export const data = [
     image: './img/catalog/bomb/11.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -300,7 +300,7 @@ export const data = [
     image: './img/catalog/bomb/12.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -308,7 +308,7 @@ export const data = [
     image: './img/catalog/bomb/13.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -316,7 +316,7 @@ export const data = [
     image: './img/catalog/bomb/14.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -324,7 +324,7 @@ export const data = [
     image: './img/catalog/bomb/15.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -332,7 +332,7 @@ export const data = [
     image: './img/catalog/bomb/16.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -340,7 +340,7 @@ export const data = [
     image: './img/catalog/bomb/17.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -348,7 +348,7 @@ export const data = [
     image: './img/catalog/bomb/18.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -356,7 +356,7 @@ export const data = [
     image: './img/catalog/bomb/19.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -364,7 +364,7 @@ export const data = [
     image: './img/catalog/bomb/20.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -372,7 +372,7 @@ export const data = [
     image: './img/catalog/bomb/21.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'bath-bomb',
     popular: false,
   },
   {
@@ -380,7 +380,7 @@ export const data = [
     image: './img/catalog/scrub/1.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -388,7 +388,7 @@ export const data = [
     image: './img/catalog/scrub/2.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -396,7 +396,7 @@ export const data = [
     image: './img/catalog/scrub/3.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -404,7 +404,7 @@ export const data = [
     image: './img/catalog/scrub/4.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -412,7 +412,7 @@ export const data = [
     image: './img/catalog/scrub/5.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -420,7 +420,7 @@ export const data = [
     image: './img/catalog/scrub/6.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -428,7 +428,7 @@ export const data = [
     image: './img/catalog/scrub/7.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -436,7 +436,7 @@ export const data = [
     image: './img/catalog/scrub/8.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: true,
   },
   {
@@ -444,7 +444,7 @@ export const data = [
     image: './img/catalog/scrub/9.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: true,
   },
   {
@@ -452,7 +452,7 @@ export const data = [
     image: './img/catalog/scrub/10.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -460,7 +460,7 @@ export const data = [
     image: './img/catalog/scrub/11.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -468,7 +468,7 @@ export const data = [
     image: './img/catalog/scrub/12.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
   {
@@ -476,7 +476,7 @@ export const data = [
     image: './img/catalog/scrub/13.jpg',
     price: 5.20,
     name: 'Soap “Desert rose”',
-    type: 'soap',
+    type: 'scrub',
     popular: false,
   },
 ]

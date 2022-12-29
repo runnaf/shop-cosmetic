@@ -1,15 +1,15 @@
 import {
   BrowserRouter as Router,
-  Link,
+  Link
 } from "react-router-dom";
 import logo from "../img/logo.svg";
 
 export function NavigationFooter () {
   return (
     <Router>
-      <nav className="footer section">
-        <Link to="/"><img src={ logo } alt="Логотип" width="189" height="98"/></Link>
-        <ul className="footer__list info">
+      <nav className="header section">
+        <Link to="/"><img src={ logo } alt="Логотип" width="116" height="66" /></Link>
+        <ul className="header__list info">
           <li className="info__item">
             <Link className="info__link" to="/aboutus">О нас</Link>
           </li>
@@ -19,7 +19,7 @@ export function NavigationFooter () {
           <li className="info__item">
             <Link to="/blog" className="info__link">Блог</Link>
           </li>
-        </ul>
+        </ul>        
       </nav>      
     </Router>
   )
