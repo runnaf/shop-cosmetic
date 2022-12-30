@@ -4,8 +4,8 @@ import { ItemCard } from "./ItemCard";
 import { ArrowButton } from "./svg/ArrowButton";
 
 
-export function Card({className, arrayData, numberCards}) {
-  const [cardPage,setCardPage] = useState(1);
+export function Card({className, arrayData, numberCards, page}) {
+  const [cardPage,setCardPage] = useState(page ? page : 1);
   const lastIndexCard = cardPage*numberCards;
   const firstIndexCard = lastIndexCard - numberCards;
   const cardsOnList = arrayData.slice(firstIndexCard, lastIndexCard);

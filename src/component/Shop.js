@@ -1,7 +1,7 @@
 import { Card } from "./Card";
 import { TitleMain } from "./TitleMain";
 import { data } from "../data/dataAll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Select from "react-select";
 
 const options = [
@@ -10,14 +10,16 @@ const options = [
   { value: 'price-desc', label: 'По убыванию цены' },
 ];
 
-export function Shop({functionRanger}) {
+export function Shop() {
   const [dataArray, setDataArray] = useState(data);
-  const [selectedOption, setSelectedOption] = useState('popular');
+  const [selectedOption, setSelectedOption] = useState('');
   const [value, setValue] = useState("all");
+  const [page, setPage] = useState(1)
   
 
   const filterOption = (newValue) => {
     setSelectedOption(newValue.value);
+    setPage(1)
     
     if (newValue.value === 'popular') {
       dataArray.sort((function(a, b) {
@@ -50,20 +52,59 @@ export function Shop({functionRanger}) {
 
   const onChangeValueRadio = (e) => {
     setValue(e.target.value);
+    setPage(1);
 
     if (e.target.value === 'all') {
-      setDataArray(data)
+      setDataArray(data);
+      setPage(1);
+      return dataArray 
     } else {
-        setDataArray(data.filter(item => item.type === e.target.value))      
+        setDataArray(data.filter(item => item.type === e.target.value));
+        setPage(1);
+        return dataArray      
     }
   }
+
+  const onFilter = () => {
+    if (selectedOption === 'popular') {
+      dataArray.sort((function(a, b) {
+        if (a.popular < b.popular) {
+          return 1;
+        }
+        if (a.popular > b.popular) { 
+          return -1;
+        }
+        return 0;
+      }));
+      
+      setDataArray(dataArray);
+    }
+    else if (selectedOption === 'price-asc') {
+        dataArray.sort((function(a, b) {
+          return a.price - b.price;
+      }))
+
+      setDataArray(dataArray);
+
+    } else if (selectedOption === 'price-desc') {     
+        dataArray.sort((function(a, b) {
+          return b.price - a.price;
+      }))
+
+      setDataArray(dataArray);
+    }
+  }
+
+  useEffect(()=>{
+    onFilter();
+  }, )
   
   return(
     <section className="catalog section">
       <TitleMain text="Каталог" />
       <form className="catalog__filter">
         <fieldset>
-          <input className="visually-hidden" onChange={()=> {onChangeValueRadio()}} type="radio" name="radio" id="all" value="all" checked={value === "all" ? true : false}/>
+          <input className="visually-hidden" onChange={onChangeValueRadio} type="radio" name="radio" id="all" value="all" checked={value === "all" ? true : false}/>
           <label htmlFor="all">Все товары</label>
           <input className="visually-hidden"  onChange={onChangeValueRadio} type="radio" name="radio" id="soup" value="soap" checked={value === "soap" ? true : false}/>
           <label htmlFor="soup">Мыло</label>
@@ -83,7 +124,7 @@ export function Shop({functionRanger}) {
           />
         </fieldset>
       </form>
-      <Card className={'catalog__cards'} arrayData={ dataArray } numberCards={12} />
+      <Card className={'catalog__cards'} arrayData={ dataArray } numberCards={12} page = {page} />
     </section>
   )
 }
