@@ -95,7 +95,6 @@ export function Shop() {
   }
 
   useEffect(()=>{
-    console.log('hi');
     onFilter();
   }, )
   
