@@ -14,12 +14,12 @@ export function Shop() {
   const [dataArray, setDataArray] = useState(data);
   const [selectedOption, setSelectedOption] = useState('');
   const [value, setValue] = useState("all");
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(true)
   
 
   const filterOption = (newValue) => {
     setSelectedOption(newValue.value);
-    setPage(1)
+    setPage(!page)
     
     if (newValue.value === 'popular') {
       dataArray.sort((function(a, b) {
@@ -52,15 +52,14 @@ export function Shop() {
 
   const onChangeValueRadio = (e) => {
     setValue(e.target.value);
-    setPage(1);
 
     if (e.target.value === 'all') {
       setDataArray(data);
-      setPage(1);
+      setPage(!page);
       return dataArray 
     } else {
         setDataArray(data.filter(item => item.type === e.target.value));
-        setPage(1);
+        setPage(!page);
         return dataArray      
     }
   }
@@ -96,6 +95,7 @@ export function Shop() {
   }
 
   useEffect(()=>{
+    console.log('hi');
     onFilter();
   }, )
   
